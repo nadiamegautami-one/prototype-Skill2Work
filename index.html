@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>skill2work</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container card" id="loginBox">
+  <h1>skill2work</h1>
+  <p>Belajar skill, siap kerja</p>
+  <form onsubmit="login(event)">
+    <input type="text" placeholder="Nama" required>
+    <input type="email" placeholder="Email" required>
+    <button class="btn">Masuk</button>
+  </form>
+</div>
+
+<div class="container" id="dashboard" style="display:none">
+
+  <div class="card">
+    <h3>Tes Kecocokan Bidang</h3>
+    <p id="testResult">Belum tes</p>
+    <select id="q1">
+      <option value="">Pilih</option>
+      <option value="tech">Ngoding</option>
+      <option value="design">Desain</option>
+    </select>
+    <select id="q2">
+      <option value="">Pilih</option>
+      <option value="tech">Logika</option>
+      <option value="design">Visual</option>
+    </select>
+    <button class="btn" onclick="submitTest()">Kirim Tes</button>
+  </div>
+
+  <div class="card">
+    <h3>Progress Pelatihan</h3>
+    <p id="progressText">0%</p>
+    <button class="btn" onclick="addProgress()">Selesaikan Modul</button>
+  </div>
+
+  <div class="card">
+    <h3>Sertifikat</h3>
+    <p id="certText">Belum tersedia</p>
+    <button class="btn" onclick="checkCert()">Cek Sertifikat</button>
+  </div>
+
+  <div class="card">
+    <h3>Lowongan Kerja</h3>
+    <p>Web Developer Junior</p>
+    <input type="file">
+    <button class="btn" onclick="applyJob()">Lamar</button>
+    <p id="jobStatus"></p>
+  </div>
+
+  <button class="btn btn-outline" onclick="toggleDark()">🌙 Dark Mode</button>
+  <button class="btn btn-outline" onclick="logout()">Logout</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
