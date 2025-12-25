@@ -1,0 +1,9 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#f4f6f8;color:#333;padding:20px}
+.container{max-width:700px;margin:auto}
+.card{background:#fff;padding:20px;border-radius:10px;margin-bottom:20px;box-shadow:0 4px 8px rgba(0,0,0,.1)}
+input,select{width:100%;padding:10px;margin:8px 0}
+.btn{background:#2563eb;color:#fff;padding:10px 15px;border:none;border-radius:6px;cursor:pointer;margin:5px 0}
+.btn-outline{background:#fff;color:#2563eb;border:2px solid #2563eb}
+body.dark{background:#111;color:#eee}
+body.dark .card{background:#1f2933}
